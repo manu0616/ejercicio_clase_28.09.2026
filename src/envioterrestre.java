@@ -4,6 +4,8 @@ public class envioterrestre extends envio{
         super(codigo, destino, peso, distancia);
     }
 
+
+
     private double costoInicial() {
         return Costo + (peso * 1500) + (distancia * 400);
     }
@@ -26,16 +28,23 @@ public class envioterrestre extends envio{
         return costoInicial() * recargoPeso() * recargoDistancia();
     }
 
-
-
-
     @Override
     public double calcularcosto() {
-        return calcularcosto();
+        return 0;
     }
 
     @Override
     public double calculartiempo() {
-        return calculartiempo();
+        return 0;
+    }
+
+    @Override
+    public double CalcularCosto() {
+        return 0;
+    }
+
+    @Override
+    public double CalcularTiempoEntrega() {
+        return 0;
     }
 }

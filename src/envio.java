@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public abstract class envio {
 
     protected String codigo;
@@ -18,6 +16,15 @@ public abstract class envio {
         this.distancia = distancia;
     }
 
+    public static boolean isEmpty() {
+        return false;
+    }
+
+    public static int get(int i) {
+
+        return i;
+    }
+
     //motodos propios
     public abstract  double calcularcosto();
     public abstract  double calculartiempo();
@@ -32,4 +39,8 @@ public abstract class envio {
 
 
     }
+
+    public abstract double CalcularCosto();
+
+    public abstract double CalcularTiempoEntrega();
 }
